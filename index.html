@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <nav>
+    <div class="brand">
+    <h1 class="logo">CareerConnect🎯</h1>
+    
+</div>
+
+    <ul>
+        <li>Home</li>
+        <li>Jobs</li>
+       <li id="savedCount">Saved Jobs (0)</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Find Your Dream Job</h2>
+    <p>Explore internships and jobs for students and freshers.</p>
+</section>
+
+<section class="search-section">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search jobs, location, company..."
+    >
+
+    <select id="locationFilter">
+        <option value="">All Locations</option>
+        <option>Hyderabad</option>
+        <option>Bangalore</option>
+        <option>Chennai</option>
+        <option>Pune</option>
+    <option>Mumbai</option>
+    <option>Remote</option>
+    <option>Noida</option>
+    </select>
+
+</section>
+
+<section id="jobContainer"></section>
+<section class="hero">
+    <h2>Find Your Dream Job Today 🚀</h2>
+    <p>Explore top opportunities from leading companies.</p>
+</section>
+<footer>
+    <p>© 2026 CareerConnect | Built by Rashmika</p>
+</footer>
+<div id="jobModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalCompany"></p>
+
+        <p id="modalLocation"></p>
+
+        <p id="modalSalary"></p>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+    <script src="js/jobs.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
